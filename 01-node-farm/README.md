@@ -5,7 +5,7 @@ A Node.js server application that displays farm products with dynamic templating
 
 ## Project Structure
 
-```
+```json
 01-node-farm/
 ├── data/
 │   └── products.json          # Product data
@@ -20,6 +20,7 @@ A Node.js server application that displays farm products with dynamic templating
 ├── Readme.md                  # This file
 ├── Overview.png               # UI reference screenshot
 └── productDetails.png         # Product details UI screenshot
+
 ```
 
 ## Features
