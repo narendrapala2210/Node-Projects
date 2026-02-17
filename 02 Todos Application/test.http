@@ -1,0 +1,55 @@
+
+
+### get todos list
+GET http://localhost:3000/todos
+# /todos/?priority=MEDIUM
+# /todos/?search_q=ride
+# /todos/?priority=MEDIUM&status=DONE
+# /todos/?search_q=Buy
+# /todos/?category=WORK&status=DONE
+# /todos/?category=HOME
+# /todos/?category=LEARNING&priority=HIGH
+
+### get todo by id
+GET http://localhost:3000/todos/1
+
+
+### Create todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "todo": "RIDE a Car",
+    "priority": "MEDIUM",
+    "status": "DONE",
+    "category": "HOME",
+    "dueDate": "2026-09-22"
+}
+
+### update todo
+PUT http://localhost:3000/todos/2
+Content-Type: application/json
+
+{
+    "todo": "Buy a BIKE",
+    "priority": "LOW",
+    "status": "TO DO",
+    "category": "HOME",
+    "dueDate": "2026-05-30"
+}
+
+### update todo status
+PATCH http://localhost:3000/todos/3
+Content-Type: application/json
+
+{
+    "status": "IN PROGRESS"
+}
+
+
+### DELETE todo 
+DELETE http://localhost:3000/todos/2
+
+
+###
+GET http://localhost:3000/todos/2/allalalal
